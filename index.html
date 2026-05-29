@@ -22,12 +22,13 @@ header{border-bottom:2px solid var(--navy);padding-bottom:22px;margin-bottom:36p
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 22px 20px;box-shadow:var(--shadow);position:relative;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:inherit;transition:transform .15s ease,box-shadow .15s ease}
 .card:hover{transform:translateY(-2px);box-shadow:0 2px 4px rgba(20,35,59,.08),0 14px 32px rgba(20,35,59,.10)}
 .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--blue)}
-.card.c2::before{background:var(--teal)}.card.c3::before{background:var(--gold)}.card.c4::before{background:var(--navy)}
+.card.c2::before{background:var(--teal)}.card.c3::before{background:var(--gold)}.card.c4::before{background:var(--navy)}.card.c5::before{background:var(--green)}
 .card.soon::before{background:var(--muted)}
 .card .ico{width:46px;height:46px;border-radius:10px;background:#eef3f9;display:flex;align-items:center;justify-content:center;color:var(--navy);font-weight:700;font-size:18px;margin-bottom:14px;letter-spacing:.5px}
 .card.c2 .ico{background:#e7f6f3;color:var(--teal)}
 .card.c3 .ico{background:#faf2df;color:var(--gold)}
 .card.c4 .ico{background:#e7ecf3;color:var(--navy)}
+.card.c5 .ico{background:#e7f6ee;color:var(--green)}
 .card.soon .ico{background:#eef1f6;color:var(--muted)}
 .card h3{margin:0 0 4px;font-size:16px;font-weight:700;color:var(--navy)}
 .card p{margin:0;font-size:12.5px;color:var(--muted);flex:1}
@@ -55,10 +56,16 @@ footer b{color:var(--ink)}
   <div class="section-title">Tableros disponibles</div>
   <div class="cards">
 
-    <a class="card" href="comercial/">
+    <a class="card" href="comercial/index.html">
       <div class="ico">CO</div>
       <h3>Dashboard Comercial</h3>
       <p>Otorgamientos del año, cartera vigente, fuga del cohorte Dic-25, ranking por ejecutivo y cartillas. Datos al cierre del último mes.</p>
+      <div class="foot"><span class="badge">Activo</span><span class="arrow">Entrar →</span></div>
+    </a>
+
+    <a class="card c5" href="busa/index.html">
+      <div class="ico">BU</div>
+      <h3>BUSA</h3>
       <div class="foot"><span class="badge">Activo</span><span class="arrow">Entrar →</span></div>
     </a>
 
